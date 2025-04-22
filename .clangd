@@ -1,0 +1,17 @@
+CompileFlags:
+  CompilationDatabase: /root/kernel_dev/curr/ucxx-dev/rebuildCCL
+  Compiler: /root/kernel_dev/curr/ucxx-dev/.pixi/envs/default/bin/clang++
+  Add:
+    - "-Xclang"
+    - "-fcuda-allow-variadic-functions"
+    - "-resource-dir=/root/kernel_dev/curr/ucxx-dev/.pixi/envs/default/lib/clang/20"
+    - "-std=c++20"
+    - "-I/root/kernel_dev/curr/ucxx-dev/ucxx/cpp/include"
+    - "-I/root/kernel_dev/curr/ucxx-dev/.pixi/envs/default/include/"
+    - "-I/root/kernel_dev/curr/ucxx-dev/mscclpp/include"
+    - "-I/root/kernel_dev/curr/ucxx-dev/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/13.3.0/include/c++"
+    - "-I/root/kernel_dev/curr/ucxx-dev/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/13.3.0/include/c++/x86_64-conda-linux-gnu"
+    - "-I/root/kernel_dev/curr/ucxx-dev/.pixi/envs/default/targets/x86_64-linux/include"
+
+  Remove:
+    - "-resource-dir.*"
