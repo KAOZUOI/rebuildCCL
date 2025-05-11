@@ -1,0 +1,20 @@
+CXX = mpicxx
+CXXFLAGS = -std=c++17 -Wall -Wextra -O3
+LDFLAGS = -L/root/kernel_dev/curr/ucxx-dev/.pixi/envs/default/lib -lmscclpp -Wl,-rpath,/root/kernel_dev/curr/ucxx-dev/.pixi/envs/default/lib
+INCLUDES = -I/root/kernel_dev/curr/ucxx-dev/.pixi/envs/default/include
+
+TARGET = bootstrap_benchmark
+
+.PHONY: all clean run
+
+all: $(TARGET)
+
+$(TARGET): bootstrap_benchmark.cc
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $< -o $@ $(LDFLAGS)
+
+clean:
+	rm -f $(TARGET)
+
+# 在单机8卡上运行
+run: $(TARGET)
+	mpirun --allow-run-as-root -np 8 ./$(TARGET) 20

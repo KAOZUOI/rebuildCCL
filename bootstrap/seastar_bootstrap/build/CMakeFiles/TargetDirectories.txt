@@ -1,0 +1,7 @@
+/root/kernel_dev/curr/ucxx-dev/rebuildCCL/bootstrap/seastar_bootstrap/build/CMakeFiles/bootstrap_benchmark.dir
+/root/kernel_dev/curr/ucxx-dev/rebuildCCL/bootstrap/seastar_bootstrap/build/CMakeFiles/edit_cache.dir
+/root/kernel_dev/curr/ucxx-dev/rebuildCCL/bootstrap/seastar_bootstrap/build/CMakeFiles/rebuild_cache.dir
+/root/kernel_dev/curr/ucxx-dev/rebuildCCL/bootstrap/seastar_bootstrap/build/CMakeFiles/list_install_components.dir
+/root/kernel_dev/curr/ucxx-dev/rebuildCCL/bootstrap/seastar_bootstrap/build/CMakeFiles/install.dir
+/root/kernel_dev/curr/ucxx-dev/rebuildCCL/bootstrap/seastar_bootstrap/build/CMakeFiles/install/local.dir
+/root/kernel_dev/curr/ucxx-dev/rebuildCCL/bootstrap/seastar_bootstrap/build/CMakeFiles/install/strip.dir

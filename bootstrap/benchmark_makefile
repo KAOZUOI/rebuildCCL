@@ -1,0 +1,23 @@
+CXX = mpicxx
+CXXFLAGS = -std=c++17 -Wall -Wextra -O3
+LDFLAGS = -lmscclpp
+
+# 假设mscclpp已经安装在系统中，如果没有，需要指定路径
+# CXXFLAGS += -I/path/to/mscclpp/include
+# LDFLAGS += -L/path/to/mscclpp/lib
+
+TARGET = bootstrap_benchmark
+
+.PHONY: all clean run
+
+all: $(TARGET)
+
+$(TARGET): bootstrap_benchmark.cc
+	$(CXX) $(CXXFLAGS) $< -o $@ $(LDFLAGS)
+
+clean:
+	rm -f $(TARGET)
+
+# 在单机8卡上运行
+run: $(TARGET)
+	mpirun -np 8 ./$(TARGET)

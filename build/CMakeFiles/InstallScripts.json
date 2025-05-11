@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/root/kernel_dev/curr/ucxx-dev/rebuildCCL/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
